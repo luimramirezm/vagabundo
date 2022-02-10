@@ -50,7 +50,7 @@ def graph(x_graph, y_graph, know, steps):
     paint.diamond_cross(final_x, final_y, fill_color="red", line_color="red", size=18)
     final_stretch_x = [0, final_x]
     final_stretch_y = [0, final_y]
-    graph.line(final_stretch_x, , line_width=2, color="red")
+    graph.line(final_stretch_x, line_width=2, color="red")
     show(paint)
 
 def main(walk_distance, number_of_attemps, type_homeless):
@@ -69,6 +69,6 @@ def main(walk_distance, number_of_attemps, type_homeless):
         graph(walk_distance, average_walking_distance)
 
 if __name__ == '__main__':
-    walk_distance = [10, 100, 1000, 10000]
-    number_of_attemps = 100
+    walk_distance = [100]
+    number_of_attemps = 3
     main(walk_distance, number_of_attemps, StandarHomeless)
